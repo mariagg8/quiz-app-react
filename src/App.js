@@ -2,8 +2,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <h1>React template</h1>
+    <div>
+      <header><h1>Quizz App</h1></header>
+      <main className="main-content">
+       page content
+      </main>
+      <footer>
+        <nav className="main-nav">
+          
+        </nav>
+      </footer>
     </div>
   );
 }
