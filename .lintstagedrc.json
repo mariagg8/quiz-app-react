@@ -1,0 +1,4 @@
+{
+    "*":  "npx prettier --ignore-unknown --write",
+    "*.html": ["npx htmlhint"]
+  } 
