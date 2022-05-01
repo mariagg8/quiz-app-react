@@ -1,0 +1,90 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 2rem;
+  background-color: aliceblue;
+}
+
+.bookmark-icon {
+  all: unset;
+  position: absolute;
+  height: 10px;
+  right: 8px;
+  top: -4px;
+  border: 15px solid #333;
+  border-bottom-color: transparent;
+}
+
+.bookmark-icon-active {
+  border-color: hotpink;
+  border-bottom-color: transparent;
+}
+
+.btn__answer {
+  border: none;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(226, 163, 2);
+  cursor: pointer;
+  color: blanchedalmond;
+}
+
+.btn__answer:hover {
+  background-color: rgb(240, 188, 56);
+}
+
+.tags {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.tag1 {
+  padding: 3px;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgb(241, 190, 190);
+  text-align: center;
+  border-radius: 1px;
+}
+
+.tag2 {
+  padding: 3px;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgba(128, 167, 240, 0.425);
+  text-align: center;
+  border-radius: 1px;
+}
+.tag3 {
+  padding: 3px;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgb(187, 166, 235);
+  text-align: center;
+  border-radius: 1px;
+}
+.tag3 {
+  padding: 3px;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgb(128, 240, 240);
+  text-align: center;
+  border-radius: 1px;
+}
+.tag4 {
+  padding: 3px;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgb(238, 212, 164);
+  text-align: center;
+  border-radius: 1px;
+}
