@@ -9,6 +9,8 @@ function App() {
       </header>
       <main className="main-content">
         <Card />
+        <Card />
+        <Card />
       </main>
       <footer>
         <nav className="main-nav"></nav>
