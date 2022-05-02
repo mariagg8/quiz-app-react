@@ -11,21 +11,6 @@
   background-color: aliceblue;
 }
 
-.bookmark-icon {
-  all: unset;
-  position: absolute;
-  height: 10px;
-  right: 8px;
-  top: -4px;
-  border: 15px solid #333;
-  border-bottom-color: transparent;
-}
-
-.bookmark-icon-active {
-  border-color: hotpink;
-  border-bottom-color: transparent;
-}
-
 .btn__answer {
   border: none;
   padding: 10px;
