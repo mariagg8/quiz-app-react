@@ -11,20 +11,6 @@
   background-color: aliceblue;
 }
 
-.btn__answer {
-  border: none;
-  padding: 10px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: rgb(226, 163, 2);
-  cursor: pointer;
-  color: blanchedalmond;
-}
-
-.btn__answer:hover {
-  background-color: rgb(240, 188, 56);
-}
-
 .tags {
   display: flex;
   list-style-type: none;
