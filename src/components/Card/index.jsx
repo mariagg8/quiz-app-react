@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import './style.css';
+import Bookmark from '../Bookmark';
 
 export default function Card() {
+  const [bookmarked, setBookmarked] = useState(false);
+
   return (
     <section data-js="card" className="card">
-      <div data-js="bookmark-toggle" className="bookmark-icon"></div>
+      <Bookmark
+        checked={bookmarked}
+        onToggle={() => setBookmarked(!bookmarked)}
+      />
       <h3>Question</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing ?</p>
 
