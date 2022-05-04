@@ -3,28 +3,24 @@ import './style.css';
 import Bookmark from '../Bookmark';
 import Button from '../Button';
 
-export default function Card() {
+export default function Card({ question }) {
   const [bookmarked, setBookmarked] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
 
   return (
-    <section data-js="card" className="card">
+    <section className="card">
       <Bookmark
         checked={bookmarked}
         onToggle={() => setBookmarked(!bookmarked)}
       />
-
       <h3>Question:</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing ?</p>
+      <p>{question.question}</p>
       <Button onClick={() => setShowAnswer(!showAnswer)}>
         {showAnswer ? 'Hide' : 'Show'} answer
       </Button>
 
       <p style={{ display: showAnswer ? 'block' : 'none' }}>
-        The answer is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptates esse, eum temporibus, ducimus ipsam commodi repudiandae alias
-        dolor nisi corrupti accusamus deleniti magni atque delectus quam,
-        cupiditate ipsa vero sed!
+        {question.answer}
       </p>
 
       <ul className="tags">
