@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './components/Card';
+import { QUESTIONS } from './db';
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
         <h1>Quizz App</h1>
       </header>
       <main className="main-content">
-        <Card />
-        <Card />
-        <Card />
+        {QUESTIONS.map(question => {
+          return <Card question={question} />;
+        })}
       </main>
       <footer>
         <nav className="main-nav"></nav>
